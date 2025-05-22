@@ -22,3 +22,16 @@ export const Header = styled.header`
     animation: ${gradientAnimation} 3s linear infinite;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 `;
+
+export const Container = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(316px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: start; /* Align cards to the top */
+    padding: 20px; /* Reduce padding around the container */
+    margin: 0 auto; /* Center the container */
+    width: 100%; /* Full width */
+    max-width: 100%; /* Remove unnecessary width constraints */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+`;
