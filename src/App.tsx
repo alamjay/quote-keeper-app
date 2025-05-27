@@ -9,6 +9,10 @@ function App() {
       <Header>Quote Keeper</Header>
       <Container>
         <Card quote="Float like a butterfly, sting like a bee" />
+        <Card quote="Float like a butterfly, sting like a bee" />
+        <Card quote="Float like a butterfly, sting like a bee" />
+        <Card quote="Float like a butterfly, sting like a bee" />
+        <Card quote="Float like a butterfly, sting like a bee" />
         <GhostCard />
       </Container>
     </>

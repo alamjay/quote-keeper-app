@@ -23,15 +23,25 @@ export const Header = styled.header`
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 `;
 
+// export const Container = styled.div`
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(316px, 1fr)); /* Responsive grid */
+//     gap: 20px; /* Space between cards */
+//     justify-content: center; /* Center the cards horizontally */
+//     align-items: start; /* Align cards to the top */
+//     padding: 20px; /* Reduce padding around the container */
+//     margin: 0 auto; /* Center the container */
+//     width: 100%; /* Full width */
+//     max-width: 100%; /* Remove unnecessary width constraints */
+//     box-sizing: border-box; /* Ensure padding is included in the width */
+// `;
+
 export const Container = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(316px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between cards */
-    justify-content: center; /* Center the cards horizontally */
-    align-items: start; /* Align cards to the top */
-    padding: 20px; /* Reduce padding around the container */
-    margin: 0 auto; /* Center the container */
-    width: 100%; /* Full width */
-    max-width: 100%; /* Remove unnecessary width constraints */
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    grid-template-columns: 340px 340px 340px 340px 340px;
+    grid-template-rows: auto;
+    padding: 20px;
+    row-gap: 20px;
+    column-gap: 15px;
+    justify-content: center;
 `;

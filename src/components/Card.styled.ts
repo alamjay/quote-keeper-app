@@ -22,8 +22,8 @@ export const CardStyle = styled.div`
     border-radius: 10px;
     padding: 20px;
     box-shadow: 4px 4px 17px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Make the card width responsive */
-    max-width: 300px; /* Set a maximum width for the card */
+    // width: 100%; /* Make the card width responsive */
+    max-width: 340px; /* Set a maximum width for the card */
     height: 190px;
     display: flex;
     flex-direction: column;

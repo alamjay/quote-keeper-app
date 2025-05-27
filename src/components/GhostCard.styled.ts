@@ -4,7 +4,7 @@ export const GhostCardStyle = styled.button`
     border-radius: 10px;
     padding: 20px;
     width: 340px;
-    height: 190px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: center;
