@@ -13,28 +13,42 @@ export const gradientAnimation = keyframes`
 `;
 
 export const Header = styled.header`
-    padding: 20px 20px;
+    padding: 20px 150px 20px 20px;
+    margin-bottom: 2rem;
     font-size: 2rem;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-weight: 600;
     border-bottom: 4px solid;
     border-image: linear-gradient(to right,rgb(18, 72, 198),rgb(75, 14, 168)) 1;
     animation: ${gradientAnimation} 3s linear infinite;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-`;
 
-// export const Container = styled.div`
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, minmax(316px, 1fr)); /* Responsive grid */
-//     gap: 20px; /* Space between cards */
-//     justify-content: center; /* Center the cards horizontally */
-//     align-items: start; /* Align cards to the top */
-//     padding: 20px; /* Reduce padding around the container */
-//     margin: 0 auto; /* Center the container */
-//     width: 100%; /* Full width */
-//     max-width: 100%; /* Remove unnecessary width constraints */
-//     box-sizing: border-box; /* Ensure padding is included in the width */
-// `;
+    button {
+      height: 50px;
+      padding: 0 20px; /* Add horizontal padding */
+      border-radius: 8px; /* Slightly round corners */
+      background-color: #d1c4e9; /* Light purple background */
+      color: #4a148c; /* Dark purple text */
+      font-size: 1rem; /* Adjust font size */
+      font-weight: 600; /* Make text bold */
+      border: none; /* Remove default border */
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+      cursor: pointer; /* Change cursor to pointer */
+      transition: all 0.3s ease; /* Smooth transition for hover effects */
+
+      &:hover {
+          background-color: #b39ddb; /* Slightly darker purple on hover */
+          box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+      }
+
+      &:active {
+          transform: scale(0.98); /* Slightly shrink button on click */
+      }
+    }
+`;
 
 export const Container = styled.div`
     display: grid;

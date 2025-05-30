@@ -1,20 +1,29 @@
-import React from 'react';
-import { Container, Header } from './App.styled';
-import Card from './components/Card';
-import GhostCard from './components/GhostCard';
+import React, { useState } from 'react';
+import { Header } from './App.styled';
+import QuoteList from './components/QuoteList';
+import NewQuote from './components/NewQuote';
 
 function App() {
+
+  const [isPosting, setIsPosting] = useState(false);
+
+  const closeModalHandler = () => {
+    console.log(!isPosting);
+    
+    setIsPosting(false)
+  };
+  const showModalHandler = () => setIsPosting(true);
+
   return (
     <>
-      <Header>Quote Keeper</Header>
-      <Container>
-        <Card quote="Float like a butterfly, sting like a bee" />
-        <Card quote="Float like a butterfly, sting like a bee" />
-        <Card quote="Float like a butterfly, sting like a bee" />
-        <Card quote="Float like a butterfly, sting like a bee" />
-        <Card quote="Float like a butterfly, sting like a bee" />
-        <GhostCard />
-      </Container>
+      <Header>
+        <h3>Quote Keeper</h3>
+        <button onClick={showModalHandler}>New Quote</button>
+      </Header>
+      {isPosting && 
+        <NewQuote onClose={closeModalHandler} />
+      }
+      <QuoteList />
     </>
   );
 }
